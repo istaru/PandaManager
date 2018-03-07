@@ -19,12 +19,13 @@ import com.shhb.supermoon.pandamanager.application.MainApplication;
 import com.shhb.supermoon.pandamanager.view.BlackStatusBar;
 
 import me.drakeet.materialdialog.MaterialDialog;
+import me.imid.swipebacklayout.lib.app.SwipeBackActivity;
 
 /**
  * Created by superMoon on 2017/8/24.
  */
 
-public class BaseActivity extends AppCompatActivity{
+public class BaseActivity extends SwipeBackActivity{
 
     public static Activity context;
     /** 刷新控件 */

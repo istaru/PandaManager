@@ -6,12 +6,12 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowIsTranslucent">true</item>
     </style>
 
     //1、设置背景图Theme
     <style name="mainTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowBackground">@mipmap/welcome</item>
-        <!--<item name="android:windowIsTranslucent">true</item>-->
         <item name="android:windowNoTitle">true</item>
     </style>
 

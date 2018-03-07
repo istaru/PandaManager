@@ -45,7 +45,7 @@ public class Constants {
     public static final String IMAGE_PATH = "Images";
 
     //服务器接口地址
-    public static final String REQUEST = "http://v1.pandadaiapp.com/";
+    public static final String REQUEST = "http://v1.pandadaiapp.com/app_user/index.php?C=";
 //    public static final String REQUEST = "http://192.168.1.101:8080/dkuan/app_user/index.php/";
     //服务器HTML页面地址
     public static final String HTML_REQUEST = "http://www.dijiadijia.com/panda/";

@@ -113,4 +113,6 @@ dependencies {
     compile files('libs/umeng_social_tool.jar')
     //友盟推送
     compile project(':PushSDK')
+    //滑动退出activity
+    compile 'me.imid.swipebacklayout.lib:library:1.1.0'
 }
