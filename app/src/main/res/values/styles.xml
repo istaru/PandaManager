@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    //1、设置背景图Theme
+    <style name="mainTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@mipmap/welcome</item>
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="tabLayoutTextStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">@dimen/checkbox_16_dp</item>
+    </style>
+
+    <style name="SelectBtnTheme" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/view_selector</item>
+        <item name="android:enabled">false</item>
+    </style>
+
+    <style name="LetterIndexTextViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">@dimen/side_letter_bar_width</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:background">@color/webBg</item>
+    </style>
+
+</resources>

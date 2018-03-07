@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/bTransparent">
+    <item>
+        <selector>
+            <!--松开的颜色-->
+            <item android:state_enabled="false">
+                <shape>
+                    <corners
+                        android:bottomLeftRadius="5dp"
+                        android:bottomRightRadius="5dp"
+                        android:topLeftRadius="5dp"
+                        android:topRightRadius="5dp" />
+                    <solid android:color="@color/transparent" />
+                </shape>
+            </item>
+
+            <!--默认的颜色-->
+            <shape>
+                <corners
+                    android:bottomLeftRadius="5dp"
+                    android:bottomRightRadius="5dp"
+                    android:topLeftRadius="5dp"
+                    android:topRightRadius="5dp" />
+                <solid android:color="@color/transparent" />
+            </shape>
+        </selector>
+    </item>
+</ripple>

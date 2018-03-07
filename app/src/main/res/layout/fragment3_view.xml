@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/webBg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="当前信用积分(个)"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="689"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/frt3_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_yellow"
+            android:text="去充值"
+            android:textColor="@color/yellow_text"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@id/swipe_target"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checkedButton="@+id/frt3_rb1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/frt3_rlt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_white"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/frt3_llt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center|bottom"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="A"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="级"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_toLeftOf="@+id/frt3_rb1"
+                        android:layout_toRightOf="@+id/frt3_llt1"
+                        android:gravity="center|left"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="金额范围0~5000元"
+                            android:textColor="@color/black_q"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="贷款人信息良好 信息不完整"
+                            android:textColor="@color/black_q"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="消耗积分不同"
+                            android:textColor="@color/gray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <RadioButton
+                        android:id="@+id/frt3_rb1"
+                        style="@style/SelectBtnTheme"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/frt3_rlt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/btn_white"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/frt3_llt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center|bottom"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="B"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="级"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_toLeftOf="@+id/frt3_rb2"
+                        android:layout_toRightOf="@+id/frt3_llt2"
+                        android:gravity="center|left"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="金额范围5000~20000元"
+                            android:textColor="@color/black_q"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="贷款人信息完整且良好"
+                            android:textColor="@color/black_q"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="消耗积分不同"
+                            android:textColor="@color/gray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <RadioButton
+                        android:id="@+id/frt3_rb2"
+                        style="@style/SelectBtnTheme"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/frt3_rlt3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_white"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/frt3_llt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center|bottom"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="C"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="级"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_toLeftOf="@+id/frt3_rb3"
+                        android:layout_toRightOf="@+id/frt3_llt3"
+                        android:gravity="center|left"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="金额范围5000~20000元"
+                            android:textColor="@color/black_q"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="贷款人信息完整且良好"
+                            android:textColor="@color/black_q"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="消耗积分不同"
+                            android:textColor="@color/gray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <RadioButton
+                        android:id="@+id/frt3_rb3"
+                        style="@style/SelectBtnTheme"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </RadioGroup>
+
+            <include
+                layout="@layout/button_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="推荐规则"
+                    android:textColor="@color/black_q"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="1.每推送一条消息，消耗特定积分，不同推送等级，消耗积分不同"
+                    android:textColor="@color/black_q"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="2.积分可以通过充值购买所得，信用分高的优先推送"
+                    android:textColor="@color/black_q"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

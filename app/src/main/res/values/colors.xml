@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--ActionBar的颜色-->
+    <color name="colorPrimary">#ff5640</color>
+    <!--状态栏的颜色 （使用support包时似乎无效。）-->
+    <color name="colorPrimaryDark">#ff5640</color>
+    <!-- 随主题而改变的颜色（如CheckBox的颜色）-->
+    <color name="colorAccent">#ff5640</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="webBg">#f6f6f6</color>
+    <color name="black_s">#000000</color>
+    <color name="black_q">#333333</color>
+    <color name="gray">#808080</color>
+    <color name="bTransparent">#10000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_accent_q">#fdf7f5</color>
+    <color name="green_s">#4fb21f</color>
+    <color name="green_q">#dcf0d2</color>
+    <color name="red_s">#f15021</color>
+    <color name="yellow_s">#ffdd79</color>
+    <color name="yellow_q">#fdecbb</color>
+    <color name="yellow_text">#74523b</color>
+
+    <color name="freshen_color">#768795</color>
+    <color name="google_blue">@color/colorAccent</color>
+    <color name="google_red">@color/colorAccent</color>
+    <color name="google_green">@color/colorAccent</color>
+    <color name="google_yellow">@color/colorAccent</color>
+    <!--<color name="google_blue">#4285F4</color>
+    <color name="google_red">#EA4335</color>
+    <color name="google_green">#34A853</color>
+    <color name="google_yellow">#FBBC05</color>-->
+
+</resources>

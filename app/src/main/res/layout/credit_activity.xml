@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/webBg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="充值金额"
+            android:textColor="@color/black_q"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/white"
+            android:gravity="left|center"
+            android:hint="请输入充值金额"
+            android:inputType="number"
+            android:padding="5dp"
+            android:textColor="@color/black_q"
+            android:textColorHint="@color/gray"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="现金账号余额：0.00元"
+        android:textColor="@color/gray"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:checkedButton="@+id/rb_wechat"
+        android:orientation="vertical"
+        android:layout_marginBottom="40dp">
+
+        <RelativeLayout
+            android:id="@+id/credit_rlt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/n_cz1"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="微信支付"
+                android:textColor="@color/black_s"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rb_wechat"
+                style="@style/SelectBtnTheme"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/webBg" />
+
+        <RelativeLayout
+            android:id="@+id/credit_rlt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/n_cz2"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="支付宝支付"
+                android:textColor="@color/black_s"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rb_alipay"
+                style="@style/SelectBtnTheme"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RadioGroup>
+
+    <include layout="@layout/button_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"/>
+</LinearLayout>

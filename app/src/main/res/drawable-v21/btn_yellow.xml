@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/white">
+    <item>
+        <selector>
+            <!--松开的颜色-->
+            <item android:state_enabled="false">
+                <shape android:shape="rectangle">
+                    <corners
+                        android:bottomLeftRadius="3dp"
+                        android:bottomRightRadius="3dp"
+                        android:topLeftRadius="3dp"
+                        android:topRightRadius="3dp" />
+                    <solid android:color="@color/yellow_s" />
+                </shape>
+            </item>
+
+            <!--默认的颜色-->
+            <shape android:shape="rectangle">
+                <corners
+                    android:bottomLeftRadius="3dp"
+                    android:bottomRightRadius="3dp"
+                    android:topLeftRadius="3dp"
+                    android:topRightRadius="3dp" />
+                <solid android:color="@color/yellow_s" />
+            </shape>
+        </selector>
+    </item>
+</ripple>

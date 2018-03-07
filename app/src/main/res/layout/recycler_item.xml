@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shhb.supermoon.pandamanager.view.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/item_mian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="余女士"
+                        android:textColor="@color/black_q"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="36分钟前"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    android:text="暂无单位"
+                    android:textColor="@color/gray"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="￥"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="164"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|bottom|left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5000"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="元"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|bottom|left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="期还款"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_rob"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_green"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="8dp"
+                android:text="立即抢单"
+                android:textColor="@color/green_s"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/open_or_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@color/color_accent_q"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/n_ico_01"
+                    android:gravity="left|center"
+                    android:text="地点:上海"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/n_ico_02"
+                    android:gravity="left|center"
+                    android:text="工作:企业老板"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/n_ico_03"
+                    android:gravity="left|center"
+                    android:text="信用:良好"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/up_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/n_ico_down" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_accent_q"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/n_ico_04"
+                android:gravity="left|center"
+                android:text="工资:6000/元-打开"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/n_ico_05"
+                android:gravity="left|center"
+                android:text="社保:无"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/n_ico_06"
+                android:gravity="left|center"
+                android:text="资产:有房"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="?android:selectableItemBackground"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:drawableTop="@mipmap/n_nolove"
+            android:gravity="center"
+            android:text="不感兴趣"
+            android:textColor="@color/gray"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+</com.shhb.supermoon.pandamanager.view.SwipeItemLayout>
